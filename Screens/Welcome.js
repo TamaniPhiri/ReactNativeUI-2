@@ -23,7 +23,7 @@ const Welcome = ({navigation}) => {
                         <Feather name="lock" style={{color:"#CD4406", fontSize:14}}/>
                         <TextInput placeholder="Password" placeholderTextColor={"#D17102"} secureTextEntry={true} style={{width:'80%', borderBottomColor:"#D17102", borderBottomWidth:1, paddingHorizontal:5, fontSize:14}}/>
                     </View>
-                    <TouchableOpacity style={{backgroundColor:"#D17102", borderRadius:5, marginTop:35, width:'90%'}}>
+                    <TouchableOpacity style={{backgroundColor:"#D17102", borderRadius:5, marginTop:35, width:'90%'}}  onPress={()=>navigation.navigate('Home')}>
                         <View style={{alignItems:'center'}}>
                             <Text style={{padding:10, color:"#F0F0F0",fontWeight:"500"}}>Sign Up</Text>
                         </View>

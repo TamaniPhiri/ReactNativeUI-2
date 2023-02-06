@@ -1,11 +1,11 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image, TouchableOpacity,SafeAreaView } from 'react-native'
 import React from 'react'
 
-const Home = ({navigation}) => {
+const Home = () => {
   return (
-    <View>
+    <SafeAreaView style={{paddingTop: Platform.OS === 'android' ? 35 : 0, paddingHorizontal:10}}>
       <Text>Home</Text>
-    </View>
+    </SafeAreaView>
   )
 }
 
