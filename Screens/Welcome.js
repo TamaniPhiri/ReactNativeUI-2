@@ -15,14 +15,18 @@ const Welcome = ({navigation}) => {
                     <Text style={{fontSize:32, color:"#D17102", marginVertical:20, fontWeight:'600'}}>
                         Welcome
                     </Text>
+
+                    {/*Email*/}
                     <View style={{flexDirection:'row', alignItems:'center',marginBottom:10}}>
                         <Feather name="mail" style={{color:"#CD4406", fontSize:14}}/>
                         <TextInput placeholder="Email" placeholderTextColor={"#D17102"} style={{width:'80%', borderBottomColor:"#D17102", borderBottomWidth:1, paddingHorizontal:5, fontSize:14}}/>
                     </View>
+                    {/*Password*/}
                     <View style={{flexDirection:'row', alignItems:'center'}}>
                         <Feather name="lock" style={{color:"#CD4406", fontSize:14}}/>
                         <TextInput placeholder="Password" placeholderTextColor={"#D17102"} secureTextEntry={true} style={{width:'80%', borderBottomColor:"#D17102", borderBottomWidth:1, paddingHorizontal:5, fontSize:14}}/>
                     </View>
+                    {/*SignUp*/}
                     <TouchableOpacity style={{backgroundColor:"#D17102", borderRadius:5, marginTop:35, width:'90%'}}  onPress={()=>navigation.navigate('Home')}>
                         <View style={{alignItems:'center'}}>
                             <Text style={{padding:10, color:"#F0F0F0",fontWeight:"500"}}>Sign Up</Text>
