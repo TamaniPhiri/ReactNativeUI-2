@@ -2,6 +2,7 @@ import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import {Feather} from 'react-native-vector-icons'
 import { useNavigation } from '@react-navigation/native';
+import { StatusBar } from 'expo-status-bar';
 
 
 const Dashboard = () => {
@@ -10,16 +11,16 @@ const Dashboard = () => {
 
 
   return (
+    
     <SafeAreaView style={{paddingTop: Platform.OS === 'android' ? 35 : 0, paddingHorizontal:10}}>
-
       {/*Header*/}
 
     <View style={{display:'flex', justifyContent:'space-between', width:'100%', flexDirection:'row',marginTop:10}}>
       <TouchableOpacity onPress={()=>navigation.navigate('Menu')}>
-          <Feather name="menu" style={{fontSize:24, color:"#CD4406"}}/>
+          <Feather name="menu" style={{fontSize:24, color:"#D17102"}}/>
       </TouchableOpacity>
       <TouchableOpacity>
-          <Feather name="bell" style={{fontSize:24, color:"#CD4406"}}/>
+          <Feather name="bell" style={{fontSize:24, color:"#D17102"}}/>
       </TouchableOpacity>
     </View>
   </SafeAreaView>
