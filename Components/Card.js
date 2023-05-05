@@ -28,9 +28,10 @@ const Card = ({navigation}) => {
                 </View>
             </View>
         </View>
-        
+
         <View style={{alignItems:'center', flexDirection:'row',justifyContent:'space-between'}}>
             <Text style={{color:"#F0F0F0"}}>On</Text>
+            {/*Added switch*/}
             <Switch
             trackColor={{false: '#D17102', true: '#CD4406'}}
             thumbColor={isEnabled ? '#f4f3f4' : '#f4f3f4'}
